@@ -1,3 +1,3 @@
 echo "Cleaning old app folder"
 
-npm install --production --omit=dev
+npm install --omit=dev
