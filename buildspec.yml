@@ -12,12 +12,11 @@ phases:
   post_build:
     commands:
       - echo "▶️ Preparing deployment bundle"
-      - cp package*.json dist/
-      - cp Procfile dist/
-      - cp appspec.yml dist/
-      - cp scripts/** dist/scripts/
+
 
 artifacts:            # 3️⃣ upload only compiled output
-  base-directory: dist       # dist/ becomes the root of the ZIP
   files:
-    - '**/*'                # everything inside dist/
+    - dist/**/*
+    - scripts/**/*
+    - package.json
+    - appspec.yml
