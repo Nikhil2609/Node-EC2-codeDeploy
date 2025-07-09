@@ -8,7 +8,7 @@ const a = 10;
 
 app.get("/", (req, res) => {
     console.log("API request", req, res);
-    res.send("Hello World from Elastic BeanStalk 123");
+    res.send("Hello World from Elastic BeanStalk");
 })
 
 app.listen(PORT, () => { console.log("Server Running on Port =>",PORT) })
